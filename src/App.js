@@ -27,16 +27,16 @@ function App() {
   };
 
   return (
-    <div>
+    <div style={{backgroundColor:"grey",height:"100vw"}}>
       <Container>
         <Row>
           <Col><h1> Gimnasio UnaHur</h1></Col>
         </Row>
         <Row>
-          <Col>
+          <Col className='col-4'>
             <Formulario agregarSocio={agregarSocio}/>
           </Col>
-          <Col>
+          <Col className='gap-auto col-8'>
             <h3>Lista de asociados</h3>
             {
               asociados.map( socio => 
